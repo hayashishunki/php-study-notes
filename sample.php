@@ -1,10 +1,10 @@
 <?php
 // 変数宣言時は空
 $value1;
-$value2;
+$value2 = 20;
 $text;
 // 代入
 $value1 = 12;
-$value2 = 20;
+$value2 = "abc";
 $text = "12 + 20 = ";
-echo $text, $value1 + $value2;
+echo $text, $value1, $value2;
