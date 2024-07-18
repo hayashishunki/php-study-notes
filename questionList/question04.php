@@ -12,4 +12,11 @@ echo "\n";
 echo 5 % 2, "\n";
 echo 23 % 5, "\n";
 echo 1234 % 10, "\n";
+
+echo "\n";
+
+// ③ 文字列連結
+$str1 = "a";
+$str1 .= "bcde";
+echo $str1;
 ?>
