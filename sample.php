@@ -1,10 +1,4 @@
 <?php
-// 変数宣言時は空
-$value1;
-$value2 = 20;
-$text;
-// 代入
-$value1 = 12;
-$value2 = "abc";
-$text = "12 + 20 = ";
-echo $text, $value1, $value2;
+echo "あなたの名前を入力してください\n";
+$name = trim(fgets(STDIN));
+echo "こんにちは{$name}さん\n";
