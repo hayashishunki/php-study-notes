@@ -33,4 +33,19 @@ $bool4 = $num1 <= $num2;
 $bool5 = $d1 > $num1;
 $bool6 = $num2 >= $d1;
 var_dump($bool1, $bool2, $bool3, $bool4, $bool5, $bool6);
+
+echo "\n";
+
+// ⑤論理演算子
+$num3 = 3;
+$num4 = 5;
+$num5 = 15;
+
+$seki1 = ($num3 == 3 && $num4 == 3);
+$wa1 = ($num3 == 3 || $num4 == 3);
+$seki2 = ($num5 % $num3 == 0 && $num5 % $num4 == 0);
+$hitei1 = (!($num3 == 3 && $num4 == 5));
+$sekiWa = ($num3 == 5 || ($num4 == 3 && $num5 == 15));
+
+var_dump($seki1, $wa1, $seki2, $hitei1, $sekiWa);
 ?>
