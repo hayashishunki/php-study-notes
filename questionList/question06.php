@@ -37,19 +37,23 @@
 // }
 
 
-// ①-5
-$num5 = rand(5, 15);
-echo $num5."\n";
+// // ①-5
+// $num5 = rand(5, 15);
+// echo $num5."\n";
 
-switch($num5) {
-  case 5:
-    echo "ok\n";
-    break;
-  case 10:
-  case 15:
-    echo "good\n";
-    break;
-  default:
-    echo "no good\n";
-    break;
-}
+// switch($num5) {
+//   case 5:
+//     echo "ok\n";
+//     break;
+//   case 10:
+//   case 15:
+//     echo "good\n";
+//     break;
+//   default:
+//     echo "no good\n";
+//     break;
+// }
+
+
+
+
