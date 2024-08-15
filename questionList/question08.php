@@ -12,4 +12,12 @@ for($i = 0;$i < 5;$i++) {
   echo '<br>';
 }
 
+
+// while文
+$num1 = 0;
+while($num1 < 5) {
+  echo $num1 . '<br>';
+  $num1++;
+}
+
 ?>
