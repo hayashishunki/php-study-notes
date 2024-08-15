@@ -9,4 +9,15 @@ foreach($array1 as $key => $value) {
   echo $value . '<br>';
 }
 
+
+// foreach文②
+$array2 = array();
+$array2["a"] = 1;
+$array2["b"] = 12;
+$array2["c"] = 123;
+
+foreach($array2 as $key => $value) {
+  echo "添字: ". $key . " ,要素: " . $value .'<br>';
+}
+
 ?>
