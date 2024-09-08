@@ -1,42 +1,22 @@
 <?php
 
-$result = 0;
+echo "高さを入力してください\n";
+$height = trim(fgets(STDIN));
+$space = $height;
+$outputCount = 1;
 
-while (1) {
-  echo "入力してください([+] 足し算 [-] 引き算 [=] 計算結果 )\n";
-  $operator = trim(fgets(STDIN));
+for($i = 0;$i < $height;$i++) {
+  $space--;
+  for($n = 0;$n < $space;$n++) {
+    echo " ";
+  }
 
-  if ($operator == "+") {
-    // 加算処理
-    while (1) {
-      echo "数字を入力してください(マイナス値不可)\n";
-      $num = trim(fgets(STDIN));
-      if (is_numeric($num) && $num >= 0) {
-        $result += $num;
-        echo "合計: " . $result . "\n";
-        break;
-      } else {
-        echo "再入力\n";
-      }
-    }
-  } else if ($operator == "-") {
-    // 減算処理
-    while (1) {
-      echo "数字を入力してください(マイナス値不可)\n";
-      $num = trim(fgets(STDIN));
-      if (is_numeric($num) && $num >= 0) {
-        $result -= $num;
-        echo "合計: " . $result . "\n";
-        break;
-      } else {
-        echo "再入力\n";
-      }
-    }
-  } else if ($operator == "=") {
-    // 結果表示、処理終了
-    echo "計算結果は " . $result . " です。\n";
-    break;
-  } else {
-    echo "再入力\n";
+  for($j = 0;$j < $outputCount;$j++) {
+    echo "0";
+  }
+
+  if($i != ($height - 1)) {
+    $outputCount += 2;
+    echo "\n";
   }
 }
