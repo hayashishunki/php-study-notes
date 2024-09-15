@@ -47,3 +47,37 @@ for($i = 0;$i < $height;$i++) {
     echo "\n";
   }
 }
+
+// ⑤図形を作ろう
+echo "高さを入力してください\n";
+$height = trim(fgets(STDIN));
+$space = $height;
+$outputCount = 1;
+$reversalFlag = false;
+
+for($i = 0;$i < $height;$i++) {
+  if($reversalFlag == false) {
+    $space--;
+  } else {
+    $space++;
+  }
+  for($n = 0;$n < $space;$n++) {
+    echo " ";
+  }
+
+  for($j = 0;$j < $outputCount;$j++) {
+    echo "0";
+  }
+  
+  if($outputCount >= $height) {
+    $reversalFlag = true;
+  }
+
+  if($i != ($height - 1) && $reversalFlag == false) {
+    $outputCount += 2;
+    echo "\n";
+  } else {
+    $outputCount -= 2;
+    echo "\n";   
+  }
+}
