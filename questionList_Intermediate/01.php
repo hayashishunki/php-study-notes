@@ -72,3 +72,31 @@ $ans2;
 $ans2 = trim(fgets(STDIN));
 
 echo $ans1 . "と" . $ans2 . "の最大公約数は" . calc($ans1, $ans2) . "です";
+
+
+
+// ②応用問題
+// 最小公倍数の計算
+function calc2(int $a, int $b) {
+  while(1) {
+    $num = $a % $b;
+    if($num !== 0) {
+      $a = $b;
+      $b = $num;
+    } else {
+      return $b;
+    }
+  }
+}
+
+echo "1つ目の数値を入力してください\n";
+$ans1;
+$ans1 = trim(fgets(STDIN));
+echo "2つ目の数値を入力してください\n";
+$ans2;
+$ans2 = trim(fgets(STDIN));
+
+$tmp = calc2($ans1, $ans2);
+$ret = $ans1 * $ans2 / $tmp;
+
+echo $ans1 . "と" . $ans2 . "の最小公倍数は" . $ret . "です";

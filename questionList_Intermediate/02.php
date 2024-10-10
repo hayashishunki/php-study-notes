@@ -1,5 +1,6 @@
 <?php
 
+// ①応用課題-配列の実用的操作-01
 $kokugoTest = array(
   "taro" => 65,
   "hanako" => 95,
