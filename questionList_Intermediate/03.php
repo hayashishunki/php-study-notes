@@ -30,7 +30,7 @@ $subString = substr($text4, 2, 3);
 echo $subString . "\n"; // CDE
 
 
-// ①ビルトイン関数応用
+// ①ビルトイン関数文字列操作応用
 $str = "abcdz";
 
 $ret = str_replace("z", "e", $str);

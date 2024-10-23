@@ -1,6 +1,3 @@
 <?php
 
-$str = "abcdz";
-
-$ret = str_replace("z", "e", $str);
-echo $ret;
+echo date("H:i:s, jS F Y", strtotime("2020-02-20 20:20:20"));
